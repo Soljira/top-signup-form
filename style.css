@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.woff2') format('woff2'),
+        url('Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('HelveticaNeue-Roman.woff2') format('woff2'),
+        url('HelveticaNeue-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* MY custom reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* //// */
+body {
+    display: flex;
+    /* flex-direction: ; */
+    height: 100vh;
+}
+
+body > * {
+    border: solid 1px red;
+}
+
+.left {
+    width: 100vw;
+
+}
+
+.logo-wrapper {
+    background-image: url(assets/background.jpg);
+    background-size: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    background: hsla(0, 0%, 0%, 0.482);
+    display: flex;
+    height: 150px;
+    
+}
+
+.logo span {
+    font-family: 'Norse', sans-serif;
+    font-size: 72px;
+    color: white;
+}
+
+
+.right {
+    font-family: 'Helvetica Neue', serif ;
+}
