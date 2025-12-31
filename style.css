@@ -1,22 +1,20 @@
 @font-face {
-    font-family: 'Norse';
-    src: url('Norse-Bold.woff2') format('woff2'),
-        url('Norse-Bold.woff') format('woff');
+    font-family: "Norse";
+    src: url("Norse-Bold.woff2") format("woff2"),
+        url("Norse-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('HelveticaNeue-Roman.woff2') format('woff2'),
-        url('HelveticaNeue-Roman.woff') format('woff');
+    font-family: "Helvetica Neue";
+    src: url("HelveticaNeue-Roman.woff2") format("woff2"),
+        url("HelveticaNeue-Roman.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-
-
 
 /* MY custom reset */
 *,
@@ -41,6 +39,14 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 /* Firefox */
 input[type="number"] {
     -moz-appearance: textfield;
@@ -49,42 +55,126 @@ input[type="number"] {
 /* //// */
 body {
     display: flex;
-    /* flex-direction: ; */
     height: 100vh;
 }
 
 body > * {
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 .left {
-    width: 100vw;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
 
+.left > * {
+    /* border: solid 1px red; */
 }
 
 .logo-wrapper {
-    background-image: url(assets/background.jpg);
-    background-size: 500px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
+    margin-top: 15rem;
 }
 
 .logo {
-    background: hsla(0, 0%, 0%, 0.482);
     display: flex;
-    height: 150px;
-    
+    padding: 2rem;
+    background: hsla(0, 0%, 0%, 0.482);
+    justify-content: center;
+    align-items: center;
 }
 
 .logo span {
-    font-family: 'Norse', sans-serif;
+    font-family: "Norse", sans-serif;
     font-size: 72px;
     color: white;
 }
 
+.attribution {
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Helvetica Neue", serif;
+}
 
 .right {
-    font-family: 'Helvetica Neue', serif ;
+    font-family: "Helvetica Neue", serif;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.right a {
+    color: #596D48;
+}
+
+
+.right > * {
+    /* border: solid 1px red; */
+    padding: 2rem;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid rgb(237, 237, 237); */
+    /* box-shadow: 1px 5px 5px rgb(230, 230, 230); */
+}
+
+
+.input-fields > div {
+    display: flex;
+    gap: 5rem;
+}
+
+.input-fields h3 {
+    margin: 0;
+}
+
+.input-fields > * {
+    /* border: solid 1px red; */
+
+}
+
+.input-fields input {
+    padding: 0.5rem;
+    margin: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 3px;
+}
+
+.right form > * {
+    /* border: solid 1px red; */
+}
+
+.input-container {
+    /* display: flex; */
+}
+
+.input-container > * {
+    /* border: solid 1px red; */
+
+}
+
+
+
+.input-container label,
+.input-container input {
+    display: block;
+}
+
+input[type=submit] {
+    border: none;
+    border-radius: .5rem;
+    background-color: #596D48;
+    color: white;
+    padding: 1rem 3rem;
+}
+

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Sign-up Form</title>
         <link rel="stylesheet" href="normalize.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -11,43 +11,83 @@
         <section class="left">
             <div class="logo-wrapper">
                 <div class="logo">
-                    <img src="assets/odin-lined.png" alt="" height="210" width="200" />
+                    <img
+                        src="assets/odin-lined.png"
+                        alt=""
+                        height="110"
+                        width="90"
+                    />
                     <span>Odin</span>
                 </div>
             </div>
-            <p>Photo by Halie West on Unsplash</p>
+            <p class="attribution">
+                Photo by
+                <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+                <a
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+                    >Unsplash</a
+                >
+            </p>
         </section>
         <section class="right">
-            <p>
+            <h2>
                 This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
                 Sign up now to get started. You know you want to.
-            </p>
+            </h2>
 
             <form action="#" method="POST">
-                <h2>Let's do this!</h2>
-
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" />
-
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" />
-
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" />
-
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone-num" name="phone-num" />
-
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" />
-
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input
-                    type="confirm-password"
-                    id="confirm-password"
-                    name="confirm-password"
-                />
+                <div class="input-fields">
+                    <h3>Let's do this!</h3>
+                    <div class="name-fields">
+                        <div class="input-container">
+                            <label for="first-name">FIRST NAME</label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="last-name">LAST NAME</label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                            />
+                        </div>
+                    </div>
+                    <div class="contact-fields">
+                        <div class="input-container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone-num" name="phone-num" />
+                        </div>
+                    </div>
+                    <div class="password-fields">
+                        <div class="input-container">
+                            <label for="password">PASSWORD</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="confirm-password"
+                                >CONFIRM PASSWORD</label
+                            >
+                            <input
+                                type="confirm-password"
+                                id="confirm-password"
+                                name="confirm-password"
+                            />
+                        </div>
+                    </div>
+                </div>
 
                 <input type="submit" value="Create account" />
             </form>
